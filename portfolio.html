@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="volunteer.css"> <!-- Link to volunteer-specific CSS file -->
+
+
+  <style>
+    /* Universal reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styling */
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background-color: #000000;
+      color: #ffffff;
+      padding: 10px;
+    }
+
+    /* Header (h1) styling */
+    h1 {
+      font-size: 19.1px; /* Set font size for the header */
+      margin-bottom: 20px; /* Adds space below the header */
+    }
+
+    /* Paragraph (p) styling */
+    p {
+      font-size: 19px; /* Set font size for the paragraph */
+      margin-top: 10px; /* Adds space between paragraphs */
+      line-height: 1.6; /* Improves readability */
+    }
+
+    /* Container for images */
+    .image-container {
+      position: relative;
+      width: 100%;
+      height: auto; /* Let it adjust automatically to fit content */
+    }
+
+    /* General styling for specific nth-child images */
+    .candidates-image:nth-child(1),
+    .candidates-image:nth-child(2),
+    .candidates-image:nth-child(3),
+    .candidates-image:nth-child(4),
+    .candidates-image:nth-child(5) {
+      position: absolute;
+      height: 300px;
+      width: 900px;
+      box-sizing: border-box;
+      transition: transform 0.3s ease, z-index 0s ease;
+      pointer-events: auto; /* Ensure hover works */
+    }
+
+    /* Position specific images */
+    .candidates-image:nth-child(1) {
+      top: 15px;
+      left: 270px;
+    }
+
+    .candidates-image:nth-child(2) {
+      top: 50px;
+      left: 282px;
+    }
+
+    .candidates-image:nth-child(3) {
+      top: 50px;
+      left: 290px;
+    }
+
+    .candidates-image:nth-child(4) {
+      top: 25px;
+      left: 300px;
+    }
+
+    .candidates-image:nth-child(5) {
+      top: 25px;
+      left: 275px;
+      pointer-events: none; /* Disable hover effect for image 5 */
+    }
+
+    /* Hover effect for specific images */
+    .candidates-image:nth-child(1):hover,
+    .candidates-image:nth-child(2):hover,
+    .candidates-image:nth-child(3):hover,
+    .candidates-image:nth-child(4):hover {
+      transform: translateY(-25px); /* Move the image up by 25px on hover */
+      z-index: 10; /* Bring the hovered image to the front */
+    }
+
+    /* Link styling */
+    a {
+      color: #c1102a;
+    }
+
+    /* Button Styling */
+    .btn {
+      background-color: #c1102a;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 20px;
+      position: absolute;
+      top: 20px; /* Adjust vertical position */
+      left: 20px; /* Adjust horizontal position */
+    }
+
+    .btn:hover {
+      background-color: #a60d21;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>My Portfolio</h1>
+  </header>
+
+  <p>
+    Last fall, my mom was diagnosed with late-stage, metastatic cancer, the morning she turned 50. The news came as a shock to my entire family. Our incredible, strong, thriving, ‘wonder woman’ had been silently suffering from a life-threatening disease.
+  </p>
+
+  <p>
+    I was still a freshman, getting adjusted to a new, big school. All three of my sisters had moved out, and my Dad was constantly overworked at the hospital, so I had to take care of my Mom. Although she would always tell me what a big help I’d been, taking on her chores around the house, I felt so helpless.
+  </p>
+
+  <p>
+    After a few months of doing the best I could to look after Mom, I felt I had to get more involved, having now seen what patients with cancer and their loved ones had to endure-- weeks of difficult treatment, praying for surgeries to go well, watching the life draining from their faces.
+  </p>
+
+  <p>
+    My best friend, who I recognize now, had stepped up as my main support system during this time and informed me of an opportunity to run a cancer fundraising campaign through the Leukemia & Lymphoma Society. We were eager to run together as co-candidates, and I hoped that by making an impact, I could return some hope to my own family.
+  </p>
+
+  <p>
+    Over the next few months, Prisha and I assembled a worldwide team of over thirty multigenerational members, all joining together under a single cause. Individually, we spent over one hundred hours devising and executing campaign activities, hosting team meetings, designing promotions, and pitching sponsorships to local businesses.
+  </p>
+
+  <p>
+    At the cumulation of our campaign, we were able to raise over $20,000 in funding for our local patients’ treatments and transportation, alongside advocacy groups on Capitol Hill running their campaigns to garner greater federal support for cancer research.
+  </p>
+
+  <p>
+    Ultimately, I am so grateful to have played a part in improving the lives of the hundreds of patients we were able to assist. Back at home, I am excited to report Mom is recovering quickly, though she still isn’t cancer-free. As she nears closer to remission, her new thick hair once again matching mine, I am finally beginning to understand my role in her treatment-- not the cure, but a support system.
+  </p>
+
+  <p>
+    Pictured below: Prisha & I, co-candidates of Team Hematologist Heroes. More photos <strong>@hematologistheroes</strong> on Instagram. Interested in supporting LLS? Donate <a href="https://givenow.lls.org/give/342076/?ds_rl=1278572&gad_source=1&ds_rl=1278572&gclid=CjwKCAjwxY-3BhAuEiwAu7Y6s3aXDhpNeq6PKiPCBfDp-lWyr0OrZkB1JQQapYRL0FwOk-maMp_TGRoCC1kQAvD_BwE&gclsrc=aw.ds#!/donation/checkout" target="_blank">here</a>!
+  </p>
+
+
+  <!-- Add a Back button -->
+  <button onclick="location.href='index.html'" class="btn">Back</button>
+
+  <div class="image-container">
+    <img src="images/firstPolaroid.png" class="candidates-image">
+    <img src="images/secondPolaroid.png" class="candidates-image">
+    <img src="images/thirdPolaroid.png" class="candidates-image">
+    <img src="images/fourPolaroid.png" class="candidates-image">
+    <img src="images/coCandidates.png" class="candidates-image">
+  </div>
+
+  
+
+</body>
+
+</html>
